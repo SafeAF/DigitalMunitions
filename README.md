@@ -1,2 +1,6 @@
 # DigitalMunitions
-Payloads for buffer overflows and other cyberweapons, often large amounts of effort are involved in reducing the size of the payload. Sub 30 bytes is a personal record for a local /bin/sh. All these payloads are used in house, they arent just toy demonstrations. If need-be we can and will hand modify to get around antivirus, often without the need for more advanced techniques (packers etc).
+Payloads for buffer overflows and other cyberweapons. Small payloads, all in the 30-40 byte range, with the plain exec /bin/sh weighing in sub 30 bytes @ 28 Bytes
+
+Chmod 666 /etc/shadow 28 Bytes
+Exec /bin/sh 38 Bytes
+Setuid Exec /bin/sh 36 Bytes
